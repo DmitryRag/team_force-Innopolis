@@ -1,0 +1,69 @@
+.bascetcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 860px;
+    width: 100%;
+}
+
+.bascetcard__image {
+    max-width: 122px;
+    max-height: 122px;
+    margin-right: 98px;
+}
+
+.bascetcard__title {
+    font-size: 17px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0 auto 0 0;
+}
+
+.bascetcard__price {
+    font-size: 18px;
+    line-height: 22px;
+    color: #D58C51;
+    margin: 0 0 0 auto;
+}
+
+.bascetcard__button {
+    background-image: url(../../images/button_buscet_delete.svg);
+    border: none;
+    border-radius: 50%;
+    background-color: #161516;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .bascetcard__image {
+        max-width: 122px;
+        max-height: 122px;
+        margin-right: 48px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .bascetcard {
+        flex-direction: column;
+    }
+
+    .bascetcard__image {
+        margin: 0 0 15px 0;
+    }
+
+    .bascetcard__title {
+        margin: 0 0 15px 0;
+    }
+
+    .bascetcard__price {
+        margin: 0 0 5px 0;
+    }
+
+    .bascetcard__button {
+        margin: 0 0 25px 0;
+    }
+}

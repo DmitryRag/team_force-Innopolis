@@ -1,0 +1,60 @@
+.header {
+    background: #161516;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 70px;
+}
+
+.header__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.header__basket_wrapper {
+    display: flex;
+    flex-direction: row;   
+}
+
+.header__basket-value_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.header__basket_value {
+    margin: 0;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.header__navlink {
+    max-height: 50px;
+    max-width: 50px;
+}
+
+@media screen and (max-width: 701px) {
+    .header {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .header__basket_wrapper {
+        margin-top: 10px;
+    }
+
+    .header__title {
+        margin-right: 0;
+        text-align: center;
+    }
+}

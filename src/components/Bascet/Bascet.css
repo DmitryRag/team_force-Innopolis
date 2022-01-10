@@ -1,0 +1,23 @@
+.bascet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bascet__wrapper {
+    padding: 0 40px 0 40px;
+}
+
+.bascet__title {
+    font-size: 31px;
+    line-height: 38px;
+    color: #FFFFFF;
+    margin-top: 53px;
+}
+
+@media screen and (max-width: 768px) {
+    .bascet__title {
+        font-size: 21px;
+        text-align: center;
+    }
+}

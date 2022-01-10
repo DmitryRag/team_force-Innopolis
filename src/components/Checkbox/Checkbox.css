@@ -1,0 +1,37 @@
+.checkbox {
+    display: flex;
+    align-items: center;
+    padding: 1px;
+    margin-top: 15px;
+}
+
+.checkbox .checkbox__border {
+    position: relative;
+    border: 1px solid #D58C51;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin-right: 9px;
+}
+
+.checkbox .checkbox__indicator {
+    position: absolute;
+    z-index: 1;
+    background-color: #D58C51;
+    margin: 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 350ms;
+}
+
+.checkbox .checkbox__indicator.checked {
+    transform: scale(1);
+}
+
+.checkbox .checkbox__label {
+    color: #301411;
+    font-size: 11px;
+    line-height: 13px;
+}

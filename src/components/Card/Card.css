@@ -1,0 +1,52 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #D58C51;
+    padding: 43px 21px 32px 21px;
+}
+
+.card__image {
+
+}
+
+.card__name {
+    margin: 31px 0 0 0;
+}
+
+.card__description {
+    margin: 10px 0 0 0;
+}
+
+.card__buy-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.card__price {
+    margin: 0;
+}
+
+.card__value {
+    margin: 0 auto 0 7px;
+}
+
+.card__button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: #161516;
+    background-image: url(../../images/button_buy.svg);
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.card__button:hover {
+    background-image: url(../../images/button_buy_active.svg);
+}
+
+.card__button:hover .card {
+    color: #D58C51;
+}
